@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "title": "Peter Hooks",
+    "details": {
+      "description": "The bassist and co-founder of the Joy Division. Hook often used the bass as a lead instrument, playing melodies on the high strings with a signature heavy chorus effect..",
+      "subtitle": "Joy Division",
+      "description2": "On July 1976, childhood friends Bernard Sumner and Hook attended a Sex Pistols show at the Manchester Lesser Free Trade Hall. The following day Hook borrowed £35 from his mother to buy his first bass guitar. Inspired by the performance, Sumner and Hook formed a band with their friend Terry Mason, who had also attended the shows. Their band, originally called Warsaw, debuted on 29 May 1977 at the Electric Circus, supporting Buzzcocks, Penetration and John Cooper Clarke. The band played their first gig as Joy Division on 25 January 1978 at Pip's Disco in Manchester."
+    },
+    "date": "1976-1980",
+    "summary": "Bassist",
+    "roles": [ "Bassist",  "Founder", " Backing vocals" ],
+    "links": [{ "type": "web", "text": "View on Wikipedia", "link": "https://en.wikipedia.org/wiki/Peter_Hook" }]
+  },
+  {
+    "id": 2,
+    "title": "Ian Curtis",
+    "details": {
+      "description": "Curtis was the lead singer and lyricist of the band and recorded two albums with the group: Unknown Pleasures (1979) and Closer (1980).",
+      "subtitle": "Dissolution's reason",
+      "description2": "Curtis was known for his bass-baritone voice, dance style and songwriting typically filled with imagery of desolation, emptiness and alienation. Curtis suffered from epilepsy and depression and took his own life on the eve of Joy Division's first North American tour and shortly before the release of Closer. His death led to the band's dissolution and the subsequent formation of New Order."
+    },
+    "date": "1976–1980",
+    "summary": "Vocalist",
+    "roles": [ "Vocalist", "Songwriter", "Front-End Developer"],
+    "links": [{ "type": "web", "text": "View on Wikipedia", "link": "https://en.wikipedia.org/wiki/Ian_Curtis" }]
+  },
+  {
+    "id": 3,
+    "title": "Bernard Sumner",
+    "details": {
+      "description": "Sumner is a musician, songwriter, and record producer. He is a founding member of the bands Joy Division, New Order, and Electronic.",
+      "subtitle": "Focus on keyboards",
+      "description2": "Sumner began his career playing guitar and keyboards for Joy Division, and after the band regrouped following lead singer Ian Curtis's death, they renamed themselves New Order and Sumner took on lead vocal duties. His complex electronic compositions became less guitar-driven and more focused on electronic keyboards, synthesizers, and programming throughout the 1980s and 1990s."
+    },
+    "date": "1976–1980",
+    "summary": "Guitarist",
+    "roles": ["Lead guitar", "Keyboards", "Backing vocals" ],
+    "links": [  {   "type": "web", "text": "View on Wikipedia",  "link": "https://en.wikipedia.org/wiki/Bernard_Sumner"  }]
+  },
+  {
+    "id": 4,
+    "title": "Stephen Morris ",
+    "details": {
+      "description": "Morris is noted for his 'machine-like' skills as a drummer, which he credits to krautrock influences. Inspired by the drummers like Jaki Liebezeit of Can and Moe Tucker of the Velvet Undergroundhe becomes one of the most influent drummers.",
+      "subtitle": "Precise drumming",
+      "description2": "During Joy Division recording sessions with Martin Hannett, Morris was asked to record his parts one drum at a time so that Hannett could have complete control over the production. He also took an early interest in drum machines, combining them with traditional drumming on many Joy Division and New Order releases."
+    },
+    "date": "1977–1980",
+    "summary": "Drummer",
+    "roles": [ "Drums","Percussion"],
+    "links": [{ "type": "web", "text": "View on Wikipedia","link": "https://en.wikipedia.org/wiki/Stephen_Morris_(musician)"}]
+  },
+  {
+    "id": 5,
+    "title": "Unknown Pleasures",
+    "details": {
+      "description": "Curtis was the lead singer and lyricist of the band and recorded two albums with the group: Unknown Pleasures (1979) and Closer (1980).",
+      "subtitle": "Dissolution's reason",
+      "description2": "Curtis was known for his bass-baritone voice, dance style and songwriting typically filled with imagery of desolation, emptiness and alienation. Curtis suffered from epilepsy and depression and took his own life on the eve of Joy Division's first North American tour and shortly before the release of Closer. His death led to the band's dissolution and the subsequent formation of New Order."
+    },
+    "date": "1979",
+    "summary": "",
+    "roles": [ "-", "Songwriter", "Front-End Developer"],
+    "links": [{ "type": "web", "text": "View on Wikipedia", "link": "https://en.wikipedia.org/wiki/Ian_Curtis" }]
+  },
+  {
+    "id": 6,
+    "title": "Closer",
+    "details": {
+      "description": "Curtis was the lead singer and lyricist of the band and recorded two albums with the group: Unknown Pleasures (1979) and Closer (1980).",
+      "subtitle": "Dissolution's reason",
+      "description2": "Curtis was known for his bass-baritone voice, dance style and songwriting typically filled with imagery of desolation, emptiness and alienation. Curtis suffered from epilepsy and depression and took his own life on the eve of Joy Division's first North American tour and shortly before the release of Closer. His death led to the band's dissolution and the subsequent formation of New Order."
+    },
+    "date": "1980",
+    "summary": "",
+    "roles": [ "-g", "Songwriter", "Front-End Developer"],
+    "links": [{ "type": "web", "text": "View on Wikipedia", "link": "https://en.wikipedia.org/wiki/Ian_Curtis" }]
+  }
+]
