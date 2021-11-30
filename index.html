@@ -3,6 +3,8 @@
 <html lang = "eng">
 	<head>
 		<title>Joy Division</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
 		<link rel="stylesheet" type="text/css" href="files/css/main.css">
 		<link rel="shortcut icon" href="icon.png" type="image/x-icon">
 
@@ -10,6 +12,8 @@
 		<script type="text/javascript" src="files/js/main.min.js"></script>
 		<script type="text/javascript" src="files/js/anime.min.js"></script>
 		<script type="text/javascript" src="files/js/slickscroll.js"></script>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
@@ -20,6 +24,7 @@
 	</head>
 
 	<body>
+
 		<div class="back-fill"></div>
 
 		<!-- Following Dot -->
@@ -28,7 +33,7 @@
 		</div>
 
 		<!-- Members Display Container -->
-		<div id="listing-container">
+		<div id="listing-container"> 	<!-- js 658, -->
 			<div class="left-marker"></div>
 			<div class="work-close-btn clickable">&times;</div>
 			<div class="scroll-wrapper">
@@ -71,6 +76,8 @@
 			</div>
 		</div>
 
+
+
 		<!-- Navigation Bar -->
 		<div class="nav-wrapper">
 			<img draggable="false" data-name="home" data-lazysrc="files/imgs/moon.png" alt="Page Logo" style = "width:7vh;" class = "logo-icon clickable">
@@ -93,7 +100,7 @@
 				<ul>
 					<li class="scroller" data-name="home"><span class="clickable">HOME</span></li>
 					<li class="scroller" data-name="work"><span class="clickable">MEMBERS</span></li>
-					<li class="scroller" data-name="home"><span class="clickable">MUSIC</span></li>
+					<li class="scroller" data-name="music"><span class="clickable">MUSIC</span></li>
 					<li class="scroller" data-name="gallery"><span class="clickable">GALLERY</span></li>
 					<li class="scroller" data-name="about"><span class="clickable">ABOUT</span></li>
 				</ul>
@@ -149,7 +156,44 @@
 				<div class="content-wrapper" >
 					<div class="album-list">
 						<ul>
+							<li class="list-item">
+								<img draggable="false" src="files/imgs/work-back/5/cover.jpg" style="position: absolute; z-index: 1;">
 
+								<div class="player" style="position: relative; z-index: 10;">
+									<div class="details" style="position: relative; z-index: 10;">
+										<div class="now-playing">PLAYING x OF y</div>
+										<div class="track-name">Track Name</div>
+									</div>
+									<div class="buttons" style="position: relative; z-index: 10;">
+										<div class="prev-track" onclick="prevTrack()"><i class="fa fa-step-backward fa-2x"></i></div>
+										<div class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-5x"></i></div>
+										<div class="next-track" onclick="nextTrack()"><i class="fa fa-step-forward fa-2x"></i></div>
+									</div>
+									<div class="slider_container" style="position: relative; z-index: 10;">
+										<div class="current-time">00:00</div>
+										<input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+										<div class="total-duration">00:00</div>
+									</div>
+									<div class="slider_container" style="position: relative; z-index: 10;">
+										<i class="fa fa-volume-down"></i>
+										<input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+										<i class="fa fa-volume-up"></i>
+									</div>
+								</div>
+							</li>
+
+
+
+
+		<!--
+							<li class="list-item w-animate clickable passive">
+								<img draggable="false" src="files/imgs/work-back/6/cover.jpg" style="position: absolute; z-index: 1;">
+								<div class="player2" style="position: relative; z-index: 10;">
+								</div>
+							</li>
+
+
+							-->
 						</ul>
 					</div>
 				</div>
@@ -173,8 +217,10 @@
 			</div>
 
 
+
+
 			<!-- About Page -->
-			
+
 
 			<div id="content-container" class="about" style="margin-top:20vh;">
 				<div class="profile-image"> <img data-lazysrc="files/imgs/about-2.jpg" class="profile-pic"></div>
@@ -189,7 +235,7 @@
 				</div>
 			</div>
 
-
 		</div>
+		<script src="files/js/player.js"></script>
 	</body>
 </html>
