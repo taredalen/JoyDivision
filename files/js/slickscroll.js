@@ -1,11 +1,5 @@
 /**************************************
 *          # SlickScrollJS #
-*
-*          Copyright (2021)
-*            Musab Hassan
-*
-*    https://github.com/Musab-Hassan/
-*
 ***************************************/
 
 
@@ -28,14 +22,14 @@ const _SS = {
         dataObj = Object.assign({}, defaults, dataObj);
 
         rootElem.addEventListener("scroll", onScroll);
-        
+
         return {
             // Unset onscroll and return dom to original state
             destroy: () => {
                 rootElem.removeEventListener("scroll", onScroll);
                 // Revert element DOM structure to original state
                 let wrapper = document.querySelector(dataObj.root + " ._SS_wrapper");
-                
+
                 for (const e of wrapper.children) {
                     e.style.removeProperty("transform");
                     rootElem.appendChild(e.cloneNode(true));
@@ -52,7 +46,7 @@ const _SS = {
             if (dataObj.onScroll) dataObj.onScroll(e);
 
             pl = {y: rootElem.scrollTop, x: rootElem.scrollLeft }
-            
+
             let style = window.getComputedStyle(fixedElem.fixed);
             let matrix = new WebKitCSSMatrix(style.transform);
             let tl = {x: matrix.m41, y: matrix.m42}
@@ -68,13 +62,13 @@ const _SS = {
                 // Offset elements scrolling
                 if (dataObj.offsets) {
                     const defaultSpeed = {speedX: 1, speedY: 1};
-                    
+
                     dataObj.offsets.forEach((e) => {
                         e = Object.assign({}, defaultSpeed, e);
-                        
+
                         let offset = `translate(${position.x * (e.speedX - 1)}px, ${position.y * (e.speedY - 1)}px)`;
                         element = document.querySelector(e.element);
-                        
+
                         if (element) {
                             element.style.webkitTransform = offset;
                             element.style.transform = offset;
@@ -93,7 +87,7 @@ const _SS = {
             isInView = isInView(e);
             if (listener) {
                 // TODO: Add listener event on scroll
-            } 
+            }
             else if (isInView && events.inView) events.inView()
             else if (!isInView && events.outView) events.outView()
         }
@@ -116,7 +110,7 @@ const _SS = {
             var elemBottom = elemTop + (e.getBoundingClientRect().height/2);
 
             return (
-                ((elemBottom <= parentViewBottom) && (elemTop >= parentViewTop)) && 
+                ((elemBottom <= parentViewBottom) && (elemTop >= parentViewTop)) &&
                 ((elemBottom > 0) && (elemTop <= window.innerHeight))
             );
         }
@@ -136,7 +130,7 @@ function restructure(root) {
 
     child.classList.add("_SS_wrapper");
     dummy.classList.add("_SS_dummy");
-    
+
     for (const e of root.children) {
         child.appendChild(e.cloneNode(true));
     }

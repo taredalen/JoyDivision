@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 
 <html lang = "eng">
-	<head>
-		<title>Joy Division</title>
+<!-- Head Including the Libraries (Particulary Anime & Slickscroll) -->
+<head>
+	<title>Joy Division</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-
 		<link rel="stylesheet" type="text/css" href="files/css/main.css">
-		<link rel="shortcut icon" href="icon.png" type="image/x-icon">
-
+	  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
 		<script type="text/javascript" src="files/js/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript" src="files/js/main.min.js"></script>
-		<script type="text/javascript" src="files/js/anime.min.js"></script>
-		<script type="text/javascript" src="files/js/slickscroll.js"></script>
-		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	  <script type="text/javascript" src="files/js/anime.min.js"></script>
+	  <script type="text/javascript" src="files/js/slickscroll.js"></script>
+	  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	  <script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-7XXPE0DV47');
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+</head>
+<!-- End Head -->
 
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'G-7XXPE0DV47');
-		</script>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-	</head>
-
-	<body>
-
-		<div class="back-fill"></div>
-
+<!-- Body Start -->
+<body>
+	<div class="back-fill"></div>
 		<!-- Following Dot -->
 		<div class="hover-container">
 			<div class="hover-circle"></div>
 		</div>
-
 		<!-- Members Display Container -->
-		<div id="listing-container"> 	<!-- js 658, -->
+		<div id="listing-container"> 	<!-- Ref JS L.658 -->
 			<div class="left-marker"></div>
-			<div class="work-close-btn clickable">&times;</div>
+			<div class="close-btn clickable">&times;</div>
 			<div class="scroll-wrapper">
 				<div class="content-container">
 					<div class="section entry-section">
@@ -45,11 +42,10 @@
 								<p class="num f-index"><span></span></p>
 								<h1 class="main-title f-title"></h1>
 								<p class="info-paragraph f-description"></p>
-								<div class="links">
-								</div>
+								<div class="links"></div>
 							</div>
 						</div>
-					</div>
+					</div> <!-- Adding Back Content -->
 					<div class="section second scroll-section">
 						<div class="inline-wrapper">
 							<div class="stats-wrapper">
@@ -76,11 +72,9 @@
 			</div>
 		</div>
 
-
-
 		<!-- Navigation Bar -->
 		<div class="nav-wrapper">
-			<img draggable="false" data-name="home" data-lazysrc="files/imgs/moon.png" alt="Page Logo" style = "width:7vh;" class = "logo-icon clickable">
+			<img draggable="false" data-name="home" src="files/imgs/moon.png" alt="Page Logo" style = "width:7vh;" class = "logo-icon clickable">
 			<div class="hb-button clickable">
 				<div class="hb">
 					<span></span>
@@ -92,52 +86,62 @@
 		</div>
 
 		<!-- Navigation Menu -->
-		<div class="m-nav-wrapper">
+		<div class="menu-nav">
 			<div class="background-wrapper">
-				<img class="background wave-filter" data-lazysrc="files/imgs/back/nav-back-1.png">
+				<img class="background" src="files/imgs/back/nav-back-1.png">
 			</div>
 			<div class="list-container">
 				<ul>
-					<li class="scroller" data-name="home"><span class="clickable">HOME</span></li>
-					<li class="scroller" data-name="work"><span class="clickable">MEMBERS</span></li>
-					<li class="scroller" data-name="music"><span class="clickable">MUSIC</span></li>
-					<li class="scroller" data-name="gallery"><span class="clickable">GALLERY</span></li>
-					<li class="scroller" data-name="about"><span class="clickable">ABOUT</span></li>
+					<li class="scroller" data-name="home">
+						<span class="clickable">HOME</span>
+					</li>
+					<li class="scroller" data-name="band">
+						<span class="clickable">MEMBERS</span>
+					</li>
+					<li class="scroller" data-name="music">
+						<span class="clickable">MUSIC</span>
+					</li>
+					<li class="scroller" data-name="gallery">
+						<span class="clickable">GALLERY</span>
+					</li>
+					<li class="scroller" data-name="about">
+						<span class="clickable">ABOUT</span>
+					</li>
 				</ul>
 			</div>
 		</div>
 
-
-		<!-- Page Content -->
-		<div class="document-ease">
+		<!-- Main Content -->
+		<div class="content">
 
 			<!-- Home Page -->
+
 			<div id="content-container" style="padding-top: 23vh;">
 				<div class="load">
 					<div class="loader">0%</div>
 				</div>
 				<div class="content-wrapper">
 					<div class="text-content">
-						<h1 class = "title white h-animate"><span></span>joy division</h1>
-						<h3 class = "subtitle white h-animate">so this is permanence</h3>
+						<h1 class = "title white h-animate"><span></span>Joy Division</h1>
+						<h3 class = "subtitle white h-animate">So this is permanence</h3>
 						<h3 class = "scroll-msg subheader white bottom h-animate">Scroll</h3>
 						<div class="parallax-wrapper home-back">
-							<img draggable="false" data-lazysrc="files/imgs/back/waves.jpg" style="width:100%; height: 100%; object-fit: cover;">
+							<img draggable="false" src="files/imgs/back/waves.jpg" style="width:100%; height: 100%; object-fit: cover;">
 						</div>
 					</div>
 				</div>
 			</div>
 
+			<!-- Band Page -->
+
 			<div class="back-parallax-wrapper">
 				<h1 class="back-title">BAND</h1>
 			</div>
-
-			<!-- Band Page -->
-			<div id="content-container" class="work-click-area" style = "margin-top:50vh;">
+			<div id="content-container" class="band-click-area" style = "margin-top:50vh;">
 				<div class="content-wrapper">
-					<div class="work-list">
+					<div class="band-list">
 						<ul>
-							<!-- band items render here -->
+							<!-- Band Items Genereted With JSON ans JS -->
 						</ul>
 					</div>
 					<div class="notice-text subheader hold-text">Hold to Scroll</div>
@@ -145,97 +149,143 @@
 			</div>
 
 
-
 			<!-- Music Page -->
 
 			<div class="back-parallax-wrapper">
 				<h1 class="back-title">MUSIC</h1>
 			</div>
-
 			<div id="content-container" class="music" style="padding-top: 23vh;">
-				<div class="content-wrapper" >
+				<div class="content-wrapper">
 					<div class="album-list">
 						<ul>
+							<!-- First Player -->
 							<li class="list-item">
-								<img draggable="false" src="files/imgs/work-back/5/cover.jpg" style="position: absolute; z-index: 1;">
-
-								<div class="player" style="position: relative; z-index: 10;">
-									<div class="details" style="position: relative; z-index: 10;">
-										<div class="now-playing">PLAYING x OF y</div>
-										<div class="track-name">Track Name</div>
+								<img draggable="false" src="files/imgs/band-back/5/cover.jpg" style="position: absolute; z-index: 1;">
+								<div class="player" style="position: relative; z-index: 10;" >
+									<div class="details">
+										<div id="now-playing" class="now-playing"></div>
+										<div id="track-name" class="track-name">Unknown Pleasures</div>
 									</div>
-									<div class="buttons" style="position: relative; z-index: 10;">
+									<div class="buttons">
 										<div class="prev-track" onclick="prevTrack()"><i class="fa fa-step-backward fa-2x"></i></div>
-										<div class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-5x"></i></div>
-										<div class="next-track" onclick="nextTrack()"><i class="fa fa-step-forward fa-2x"></i></div>
+										<div id="playpause-track" class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-5x"></i></div>
+										<div id="next-track" class="next-track" onclick="nextTrack()"><i class="fa fa-step-forward fa-2x"></i></div>
 									</div>
-									<div class="slider_container" style="position: relative; z-index: 10;">
-										<div class="current-time">00:00</div>
-										<input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-										<div class="total-duration">00:00</div>
+									<div class="slider_container">
+										<div id="current-time" class="current-time">00:00</div>
+										<input id="seek_slider" type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+										<div id="total-duration" class="total-duration">00:00</div>
 									</div>
-									<div class="slider_container" style="position: relative; z-index: 10;">
+									<div class="slider_container">
 										<i class="fa fa-volume-down"></i>
-										<input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+										<input id="volume_slider" type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
 										<i class="fa fa-volume-up"></i>
 									</div>
 								</div>
 							</li>
-
-
-
-
-		<!--
-							<li class="list-item w-animate clickable passive">
-								<img draggable="false" src="files/imgs/work-back/6/cover.jpg" style="position: absolute; z-index: 1;">
-								<div class="player2" style="position: relative; z-index: 10;">
+							<!-- Second Player -->
+							<li class="list-item">
+								<img draggable="false" src="files/imgs/band-back/6/cover.jpg" style="position: absolute; z-index: 1;">
+								<div class="second-player" style="position: relative; z-index: 10;" >
+									<div class="details">
+										<div id="second-now-playing" class="now-playing"></div>
+										<div id="second-track-name" class="track-name">Unknown Pleasures</div>
+									</div>
+									<div class="buttons">
+										<div class="prev-track" onclick="prevTrackSecond()"><i class="fa fa-step-backward fa-2x"></i></div>
+										<div id="second-playpause-track" class="playpause-track" onclick="playpauseTrackSecond()"><i class="fa fa-play-circle fa-5x"></i></div>
+										<div id="second-next-track" class="next-track" onclick="nextTrackSecond()"><i class="fa fa-step-forward fa-2x"></i></div>
+									</div>
+									<div class="slider_container">
+										<div id="second-current-time" class="current-time">00:00</div>
+										<input id="second-seek_slider" type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekToSecond()">
+										<div id="second-total-duration" class="total-duration">00:00</div>
+									</div>
+									<div class="slider_container">
+										<i class="fa fa-volume-down"></i>
+										<input id="second-volume_slider" type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolumeSecond()">
+										<i class="fa fa-volume-up"></i>
+									</div>
 								</div>
 							</li>
-
-
-							-->
 						</ul>
 					</div>
 				</div>
 			</div>
-
 
 			<!-- Gallery Page -->
 
 			<div class="back-parallax-wrapper">
 				<h1 class="back-title">GALLERY</h1>
 			</div>
-
-
 			<div id="content-container" class="gallery" style="padding-top: 20vh;">
-
 				<div class="content-wrapper">
-					<div class="parallax-wrapper home-back">
-						<img draggable="false" data-lazysrc="files/imgs/back/waves.jpg" style="width:100%; height: 100%; object-fit: cover;">
+					<div class="text-content" style="position: relative;">
+						<!-- Next and previous buttons -->
+						<a class="prev" onclick="plusSlides(-1)" style="position: absolute;">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)" style="position: absolute;">&#10095;</a>
+						<div class="parallax-wrapper home-back">
+							<!-- Slideshow Container -->
+							<div class="slides fade">
+						    <img src="files/imgs/gallery/1.jpg" style="width:100%; height: 100%; object-fit: cover;">
+						  </div>
+						  <div class="slides fade">
+								<img src="files/imgs/gallery/2.jpg" style="width:100%; height: 100%; object-fit: cover;">
+						  </div>
+							<div class="slides fade">
+								<img src="files/imgs/gallery/3.jpg" style="width:100%; height: 100%; object-fit: cover;">
+						  </div>
+							<div class="slides fade">
+								<img src="files/imgs/gallery/4.jpg" style="width:100%; height: 100%; object-fit: cover;">
+						  </div>
+							<div class="slides fade">
+								<img src="files/imgs/gallery/5.jpg" style="width:100%; height: 100%; object-fit: cover;">
+						  </div>
+							<div class="slides fade">
+								<img src="files/imgs/gallery/6.jpg" style="width:100%; height: 100%; object-fit: cover;">
+						  </div>
+							<div class="slides fade">
+								<img src="files/imgs/gallery/7.jpg" style="width:100%; height: 100%; object-fit: cover;">
+						  </div>
+							<div class="slides fade">
+								<img src="files/imgs/gallery/8.jpg" style="width:100%; height: 100%; object-fit: cover;">
+						  </div>
+							<div class="slides fade">
+								<img src="files/imgs/gallery/9.jpg" style="width:100%; height: 100%; object-fit: cover;">
+						  </div>
+							<div class="slides fade">
+								<img src="files/imgs/gallery/10.jpg" style="width:100%; height: 100%; object-fit: cover;">
+						  </div>
+							<div class="slides fade">
+								<img src="files/imgs/gallery/11.jpg" style="width:100%; height: 100%; object-fit: cover;">
+						  </div>
+							<div class="slides fade">
+								<img src="files/imgs/gallery/12.jpg" style="width:100%; height: 100%; object-fit: cover;">
+						  </div>
+						</div>
 					</div>
 				</div>
 			</div>
 
-
-
-
 			<!-- About Page -->
 
-
-			<div id="content-container" class="about" style="margin-top:20vh;">
-				<div class="profile-image"> <img data-lazysrc="files/imgs/about-2.jpg" class="profile-pic"></div>
+			<div id="content-container" class="about" style="padding-bottom: 10vh;">
+				<div class="about-image" style="padding-bottom: 20vh;">
+					 <img src="files/imgs/about-2.jpg" class="profile-pic" style="margin-bottom: 100vh;">
+				 </div>
 				<div class="content-wrapper" style="margin-top:5vh; box-sizing: border-box;">
 					<h1 class = "big-title a-animate">Discover<br>Joy Division</h1>
 					<p class = "paragraph a-animate">This page is dedicated to the first post-punk band, whose discography has left a mark not only in the genre itself, but in the whole world.</p>
 					<div class="right-container a-animate">
-						<span class="divide-link">
+						<span class="link">
 							<a onclick="window.open('https://www.joydivisionofficial.com/reimagined/', '_blank')" class="clickable sublink link">Official Page</a>
 						</span>
 					</div>
 				</div>
 			</div>
-
 		</div>
-		<script src="files/js/player.js"></script>
+		<script src="files/js/first_player.js"></script>
+		<script src="files/js/second_player.js"></script>
+		<script src="files/js/gallery.js"></script>
 	</body>
 </html>
