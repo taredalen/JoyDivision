@@ -1,11 +1,10 @@
 # Joy Division Project #
-
+-------------------------
 ![](demo/sc1.png)
 ![](demo/sc2.png)
 ![](demo/sc3.png)
 ![](demo/sc4.png)
 ![](demo/sc5.png)
-
 
 
 
