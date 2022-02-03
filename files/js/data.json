@@ -22,7 +22,7 @@
     },
     "date": "1976–1980",
     "summary": "Vocalist",
-    "roles": [ "Vocalist", "Songwriter", "Front-End Developer"],
+    "roles": [ "Vocalist", "Songwriter"],
     "links": [{ "type": "web", "text": "View on Wikipedia", "link": "https://en.wikipedia.org/wiki/Ian_Curtis" }]
   },
   {
@@ -61,7 +61,7 @@
     },
     "date": "1979",
     "summary": "",
-    "roles": [ "-", "Songwriter", "Front-End Developer"],
+    "roles": [ "-", "Songwriter"],
     "links": [{ "type": "web", "text": "View on Wikipedia", "link": "https://en.wikipedia.org/wiki/Ian_Curtis" }]
   },
   {
@@ -74,7 +74,7 @@
     },
     "date": "1980",
     "summary": "",
-    "roles": [ "-g", "Songwriter", "Front-End Developer"],
+    "roles": [ "-", "Songwriter"],
     "links": [{ "type": "web", "text": "View on Wikipedia", "link": "https://en.wikipedia.org/wiki/Ian_Curtis" }]
   }
 ]
