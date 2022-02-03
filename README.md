@@ -1,4 +1,10 @@
-# Joy Division Project
+# Joy Division Project #
+
+![](demo/sc1.png)
+![](demo/sc2.png)
+![](demo/sc3.png)
+![](demo/sc4.png)
+![](demo/sc5.png)
 
 JavaScript libraries such as Anime and SlickScroll, as well as JSON format data were used in this project for faster and more convenient modification.
 
